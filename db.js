@@ -1,12 +1,12 @@
 const sqlite3 = require("sqlite3").verbose();
 
-const db = new sqlite3.Database("./ingredients.sqlite", (err) => {
+const db = new sqlite3.Database("./productos.sqlite", (err) => {
 	if (err) return console.error(err.message);
 	console.log("Conectado a la base de datos SQLite.");
 });
 
 db.run(`
-	CREATE TABLE IF NOT EXISTS ingredients (
+	CREATE TABLE IF NOT EXISTS productos (
 		id INTEGER PRIMARY KEY AUTOINCREMENT,
 		nombre TEXT NOT NULL,
 		categoria TEXT NOT NULL,
