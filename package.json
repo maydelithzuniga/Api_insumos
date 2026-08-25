@@ -1,0 +1,13 @@
+{
+  "name": "abarrotes-api",
+  "version": "1.0.0",
+  "description": "API REST simple con Node.js, Express y SQLite3 para una tienda de abarrotes",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "sqlite3": "^5.1.7"
+  }
+}
